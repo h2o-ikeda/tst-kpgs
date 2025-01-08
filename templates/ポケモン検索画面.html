@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>検索</title>
+    <link  rel="stylesheet" href="sample.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ポケモン情報検索サイト</h1>
+    </header>
+    <div class="content">
+    <p>1～5の数字を入力してください。</p>
+    <form method="POST" action="/" name="inputForm">
+      <p>ポケモンNo.　<input type="number" name="number" min="1" max="5"></p>
+      <button type="button" class="btn" id="searchButton" onclick="confirmFunction()">送信</button>
+    </form>
+    </div>
+  </body>
+  
+  <script>
+    function confirmFunction() {
+
+      // 入力チェック
+      if (inputForm.number.value === "") {
+        alert("1～5の数字を入力してください")
+        return false
+      }
+      
+      // 確認ポップアップ
+      const result = confirm(`下記の情報でポケモンを検索します。よろしいですか？
+No.：${inputForm.number.value}`)
+  
+      if( result ) {
+
+        // 検索ボタンの二重クリック防止処理
+        document.getElementById("searchButton").disabled = true
+        // サーバに通知
+        inputForm.submit()
+
+      }
+    }
+  </script>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>詳細画面</title>
+    <link  rel="stylesheet" href="sample.css" />
+  </head>
+  <body>
+    <div class="content">
+      <img src="画像のパス">
+      <div class="profile">
+       <p>No.{{number}}</p>
+       <p>{{pokemonName}}</p>
+       <p>タイプ：{{type}}</p>
+      </div>
+      <div class="introduction">
+       <p>{紹介文}</p>
+      </div>
+      <div class="stutas">
+       <p>HP：{{hp}}</p>
+       <p>こうげき：{{attack}}</p>
+       <p>ぼうぎょ：{{defense}}</p>
+       <p>とくこう：{{special_attack}}</p>
+       <p>とくぼう：{{special_defense}}</p>
+       <p>すばやさ：{{quickness}}</p>
+      </div>
+      <button type="button" onclick="history.back()">検索画面に戻る</button>
+    </div>
+  </body>
+</html>
