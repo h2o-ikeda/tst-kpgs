@@ -1,0 +1,33 @@
+header {
+  background-color: #FFF0F5;
+  height: 100px;
+}
+
+img {
+  height: 100px;
+  margin-right: 20px;
+}
+
+h1 {
+  display: inline;
+  position: absolute;
+}
+
+body {
+  margin: 0;
+}
+
+.content {
+  margin: 20px;
+}
+
+.mainMessage {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#message {
+  color: red;
+  text-align: center;
+}
