@@ -10,7 +10,7 @@ def render_form():
 def login():
     db ={"id": "001", "pokemon": "フシギダネ", "hp": 45, "attack": 49, "defense": 49,"special_attack" :65, "special_defense": 65, "quickness": 45, "type": "くさ,どく"}
 
-    if db["id"] == request.form['number']:
+    if db["id"] = request.form['number']:
         return render_template('ポケモン詳細画面.html', number=request.form['number'], pokemonName=db["id"], type=db["type"], hp=db["hp"], attack=db["attack"], defense=db["defense"], special_attack=db["special_attack"], special_defense=db["special_defense"], quickness=db["quickness"])
     else:
         return render_template('ポケモン検索失敗画面.html')

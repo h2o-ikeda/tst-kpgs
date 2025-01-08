@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ŒŸõ</title>
+    <title>æ¤œç´¢</title>
     <link  rel="stylesheet" href="sample.css" />
   </head>
   <body>
     <header>
-      <h1>ƒ|ƒPƒ‚ƒ“î•ñŒŸõƒTƒCƒg</h1>
+      <h1>ãƒã‚±ãƒ¢ãƒ³æƒ…å ±æ¤œç´¢ã‚µã‚¤ãƒˆ</h1>
     </header>
     <div class="content">
-    <p>1`5‚Ì”š‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B</p>
+    <p>1ï½5ã®æ•°å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚</p>
     <form method="POST" action="/" name="inputForm">
-      <p>ƒ|ƒPƒ‚ƒ“No.@<input type="number" name="number" min="1" max="5"></p>
-      <button type="button" class="btn" id="searchButton" onclick="confirmFunction()">‘—M</button>
+      <p>ãƒã‚±ãƒ¢ãƒ³No.ã€€<input type="number" name="number" min="1" max="5"></p>
+      <button type="button" class="btn" id="searchButton" onclick="confirmFunction()">é€ä¿¡</button>
     </form>
     </div>
   </body>
@@ -20,21 +20,21 @@
   <script>
     function confirmFunction() {
 
-      // “ü—Íƒ`ƒFƒbƒN
+      // å…¥åŠ›ãƒã‚§ãƒƒã‚¯
       if (inputForm.number.value === "") {
-        alert("1`5‚Ì”š‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢")
+        alert("1ï½5ã®æ•°å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„")
         return false
       }
       
-      // Šm”Fƒ|ƒbƒvƒAƒbƒv
-      const result = confirm(`‰º‹L‚Ìî•ñ‚Åƒ|ƒPƒ‚ƒ“‚ğŒŸõ‚µ‚Ü‚·B‚æ‚ë‚µ‚¢‚Å‚·‚©H
-No.F${inputForm.number.value}`)
+      // ç¢ºèªãƒãƒƒãƒ—ã‚¢ãƒƒãƒ—
+      const result = confirm(`ä¸‹è¨˜ã®æƒ…å ±ã§ãƒã‚±ãƒ¢ãƒ³ã‚’æ¤œç´¢ã—ã¾ã™ã€‚ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ
+No.ï¼š${inputForm.number.value}`)
   
       if( result ) {
 
-        // ŒŸõƒ{ƒ^ƒ“‚Ì“ñdƒNƒŠƒbƒN–h~ˆ—
+        // æ¤œç´¢ãƒœã‚¿ãƒ³ã®äºŒé‡ã‚¯ãƒªãƒƒã‚¯é˜²æ­¢å‡¦ç†
         document.getElementById("searchButton").disabled = true
-        // ƒT[ƒo‚É’Ê’m
+        // ã‚µãƒ¼ãƒã«é€šçŸ¥
         inputForm.submit()
 
       }
