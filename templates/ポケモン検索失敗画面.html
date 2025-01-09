@@ -10,7 +10,22 @@
     </header>
     <div class="content">
       <div class="mainMessage">ポケモン情報が見つかりませんでした。</div>
-      <button type="button" onclick="history.back()">検索画面に戻る</button>
+      <button type="button" onclick="clearAndGoBack()">検索画面に戻る</button>
     </div>
   </body>
+  <script>
+    function clearAndGoBack() {
+      
+      // 前の画面の入力フォームのIDを指定
+      const inputElements = document.getElementById("searchScreen").elements;
+
+      // 各入力要素の値をクリア
+      for (let i = 0; i < inputElements.length; i++) {
+        inputElements[i].value = "";
+      }
+          
+      // 履歴を1つ戻る
+      history.back();
+    }
+  </script>
 </html>
