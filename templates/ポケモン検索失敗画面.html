@@ -14,18 +14,14 @@
     </div>
   </body>
   <script>
-    function clearAndGoBack() {
-      
-      // 前の画面の入力フォームのIDを指定
-      const inputElements = document.getElementById("searchScreen").elements;
+    window.addEventListener('load', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const clearForm = urlParams.get('clearForm');
 
-      // 各入力要素の値をクリア
-      for (let i = 0; i < inputElements.length; i++) {
-        inputElements[i].value = "";
+      if (clearForm === 'true') {
+        const targetForm = document.getElementById('遷移先のフォームID');
+        targetForm.reset(); // フォームのリセット
       }
-          
-      // 履歴を1つ戻る
-      history.back();
-    }
+     });
   </script>
 </html>
