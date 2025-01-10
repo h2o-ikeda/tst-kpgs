@@ -13,15 +13,4 @@
       <button type="button" onclick="clearAndGoBack()">検索画面に戻る</button>
     </div>
   </body>
-  <script>
-    window.addEventListener('load', () => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const clearForm = urlParams.get('clearForm');
-
-      if (clearForm === 'true') {
-        const targetForm = document.getElementById('遷移先のフォームID');
-        targetForm.reset(); // フォームのリセット
-      }
-     });
-  </script>
 </html>
