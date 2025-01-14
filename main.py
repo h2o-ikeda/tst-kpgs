@@ -9,9 +9,9 @@ def render_form():
 @app.route('/', methods=['POST'])
 def login():
     db =[
-        {"id": "001", "pokemon": "フシギダネ", "hp": 45, "attack": 49, "defense": 49,"special_attack" :65, "special_defense": 65, "quickness": 45, "type": "くさ,どく"},
-        {"id": "002", "pokemon": "フシギソウ", "hp": 60, "attack": 62, "defense": 63,"special_attack" :80, "special_defense": 80, "quickness": 60, "type": "くさ,どく"},
-        {"id": "003", "pokemon": "フシギバナ", "hp": 80, "attack": 82, "defense": 83,"special_attack" :100, "special_defense": 100, "quickness": 80, "type": "くさ,どく"},
+        {"id": "001", "pokemon": "フシギダネ","intro": "生まれて　しばらくの　あいだ　背中の　タネに　詰まった　栄養を　取って　育つ。", "hp": 45, "attack": 49, "defense": 49,"special_attack" :65, "special_defense": 65, "quickness": 45, "type": "くさ,どく"},
+        {"id": "002", "pokemon": "フシギソウ", "intro": "太陽の　光を　浴びるほど　体に　力が　わいて　背中の　つぼみが　育っていく。", "hp": 60, "attack": 62, "defense": 63,"special_attack" :80, "special_defense": 80, "quickness": 60, "type": "くさ,どく"},
+        {"id": "003", "pokemon": "フシギバナ", "intro": "浴びた　太陽の　光を　エネルギーに　変換できるので　夏の　ほうが　強くなる。", "hp": 80, "attack": 82, "defense": 83,"special_attack" :100, "special_defense": 100, "quickness": 80, "type": "くさ,どく"},
         ]
 
     if db["id"] == request.form['number']:
