@@ -8,7 +8,11 @@ def render_form():
 
 @app.route('/', methods=['POST'])
 def login():
-    db ={"id": "001", "pokemon": "フシギダネ", "hp": 45, "attack": 49, "defense": 49,"special_attack" :65, "special_defense": 65, "quickness": 45, "type": "くさ,どく"}
+    db =[
+        {"id": "001", "pokemon": "フシギダネ", "hp": 45, "attack": 49, "defense": 49,"special_attack" :65, "special_defense": 65, "quickness": 45, "type": "くさ,どく"},
+        {"id": "002", "pokemon": "フシギソウ", "hp": 60, "attack": 62, "defense": 63,"special_attack" :80, "special_defense": 80, "quickness": 60, "type": "くさ,どく"},
+        {"id": "003", "pokemon": "フシギバナ", "hp": 80, "attack": 82, "defense": 83,"special_attack" :100, "special_defense": 100, "quickness": 80, "type": "くさ,どく"},
+        ]
 
     if db["id"] == request.form['number']:
         return render_template('ポケモン詳細画面.html', number=request.form['number'], pokemonName=db["id"], type=db["type"], hp=db["hp"], attack=db["attack"], defense=db["defense"], special_attack=db["special_attack"], special_defense=db["special_defense"], quickness=db["quickness"])
