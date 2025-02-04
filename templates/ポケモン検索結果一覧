@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>検索結果一覧画面</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='sample.css') }}">
+  </head>
+  <body>
+    <div class="content">
+    </div>
+    <script>
+     for(let i=0; i<{{db}}.length; i++){
+      const newDiv = document.createElement("div");
+      newDiv.innerHTML =  
+      div1.appendChild(newDiv);
+    }
+    </script>
+
+  </body>
+</html>
