@@ -5,12 +5,18 @@
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='sample.css') }}">
   </head>
   <body>
-    <div class="content">
+    <div id="content">
     </div>
     <script>
+     const div1 = document.getElementById("content");
      for(let i=0; i<{{db}}.length; i++){
       const newDiv = document.createElement("div");
-      newDiv.innerHTML =  
+      const newId = document.createElement("p");
+      newId.innerHTML = 'No.{{db[i][0]}}';
+      newDiv.appendChild(newId);
+      const newName = document.createElement("p");
+      newName.innerHTML = '{{db[i][1]}}';
+      newDiv.appendChild(newName);
       div1.appendChild(newDiv);
     }
     </script>
