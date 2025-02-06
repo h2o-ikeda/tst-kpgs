@@ -31,3 +31,8 @@ body {
   color: red;
   text-align: center;
 }
+
+.resultList {
+  border: solid;
+  border-color: black;
+}
