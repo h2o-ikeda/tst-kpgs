@@ -16,12 +16,12 @@
      const db = JSON.parse('{{ db_json | safe }}')
      for(let i=0; i<db.length; i++){
       const newDiv = document.createElement("div");
-      const newId = document.createElement("p");
-      newId.textContent = 'No.'+db[i][0];
-      newDiv.appendChild(newId);
-      const newName = document.createElement("p");
-      newName.textContent = db[i][1];
-      newDiv.appendChild(newName);
+      // const newId = document.createElement("p");
+      newDiv.innerHTML = "<p>No." + db[i][0] + "</p><p>" + db[i][1] + "</p>";
+      // newDiv.appendChild(newId);
+      //const newName = document.createElement("p");
+      //newDiv.innerHTML =  "<p>db[i][1]</p>";
+      //newDiv.appendChild(newName);
       div1.appendChild(newDiv);
     }
     </script>
