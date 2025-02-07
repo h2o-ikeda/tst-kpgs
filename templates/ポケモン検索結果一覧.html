@@ -11,7 +11,7 @@
     <div id="content">
       {% for item in db %}
         <div class="resultList">
-          <a href="/detail/{{item[0]}}">
+          <a href="/detail?id={{item[0]}}">
             <p>No.{{item[0]}}</p>
             <p>{{item[1]}}</p>
           </a>
