@@ -8,6 +8,19 @@ img {
   margin-right: 20px;
 }
 
+.seachform{
+  font-size: x-large;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn{
+  font-size: x-large;
+  width: 3em;
+  border-radius: 10px;
+
+}
+
 h1 {
   display: inline;
   position: absolute;
@@ -18,8 +31,8 @@ body {
 }
 
 .content {
-  font-size: large;
-  margin: 20px;
+  font-size: x-large;
+  margin: 50px;
 }
 
 .mainMessage {
