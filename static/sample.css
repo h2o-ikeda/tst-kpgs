@@ -48,5 +48,22 @@ body {
 
 .resultList {
   border: solid;
+  border-width: thin;
+  border-radius: 10px;
   border-color: black;
+  margin: 50px;
+  padding-left: 20px;
+  line-height: 0.5
+}
+
+.item {
+  text-decoration: none;
+  color: black;
+}
+
+.resultheadertext{
+  background: black;
+  border-radius: 20px;
+  color: white;
+  padding: 5px;
 }
