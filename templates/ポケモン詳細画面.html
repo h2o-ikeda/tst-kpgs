@@ -6,22 +6,24 @@
   </head>
   <body>
     <div class="content">
-      <img src="https://storage.cloud.google.com/tst-kpgs-poc-h2o.appspot.com/{{number}}.png">
-      <div class="profile">
-       <p>No.{{number}}</p>
-       <p>{{pokemonName}}</p>
-       <p>タイプ：{{type}}</p>
-      </div>
-      <div class="introduction">
-       <p>{{intro}}</p>
-      </div>
-      <div class="stutas">
-       <p>HP：{{hp}}</p>
-       <p>こうげき：{{attack}}</p>
-       <p>ぼうぎょ：{{defense}}</p>
-       <p>とくこう：{{special_attack}}</p>
-       <p>とくぼう：{{special_defense}}</p>
-       <p>すばやさ：{{quickness}}</p>
+      <div class="contentposition">
+       <img src="https://storage.cloud.google.com/tst-kpgs-poc-h2o.appspot.com/{{number}}.png">
+       <div class="profile">
+        <p>No.{{number}}</p>
+        <p>{{pokemonName}}</p>
+        <p>タイプ：{{type}}</p>
+       </div>
+       <div class="introduction bottomcontent">
+        <p>{{intro}}</p>
+       </div>
+       <div class="status bottomcontent">
+        <p>HP：{{hp}}</p>
+        <p>こうげき：{{attack}}</p>
+        <p>ぼうぎょ：{{defense}}</p>
+        <p>とくこう：{{special_attack}}</p>
+        <p>とくぼう：{{special_defense}}</p>
+        <p>すばやさ：{{quickness}}</p>
+       </div>
       </div>
       <button type="button" id="returnbutton" onclick="history.back()">一覧画面に戻る</button>
       <button type="button" id="seachbutton" onclick="location.href='./'">検索画面に戻る</button>
