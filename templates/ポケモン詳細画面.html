@@ -25,6 +25,18 @@
         <p>すばやさ：{{quickness}}</p>
        </div>
       </div>
+      <form method="POST" action="/update" name="inputForm">
+       <input type="hidden" name="pokemonName" value="{{pokemonName}}">
+       <input type="hidden" name="type" value="{{type}}">
+       <input type="hidden" name="intro" value="{{intro}}">
+       <input type="hidden" name="hp" value="{{hp}}">
+       <input type="hidden" name="attack" value="{{attack}}">
+       <input type="hidden" name="defense" value="{{defense}}">
+       <input type="hidden" name="special_attack" value="{{special_attack}}">
+       <input type="hidden" name="special_defense" value="{{special_defense}}">
+       <input type="hidden" name="quickness" value="{{quickness}}">
+      <button type="button" class="btn" onclick="confirmFunction()">更新</button>
+    　</form>
       <button type="button" id="returnbutton" onclick="history.back()">一覧画面に戻る</button>
       <button type="button" id="seachbutton" onclick="location.href='./'">検索画面に戻る</button>
     </div>
