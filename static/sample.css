@@ -4,8 +4,8 @@
 }
 
 img {
-  height: 100px;
-  margin-right: 20px;
+  height: 300px;
+  margin-right: 60px;
 }
 
 .seachform{
@@ -66,4 +66,38 @@ body {
   border-radius: 20px;
   color: white;
   padding: 5px;
+}
+
+.profile{
+  border: solid;
+  border-width: thin;
+  border-radius: 10px;
+  border-color: black;
+  margin: 50px;
+  padding-left: 20px;
+  width: 25%;
+}
+
+.contentposition{
+  display: flex; /*直下の要素を並列*/
+  flex-wrap: wrap; /*行がいっぱいになったら折り返す*/
+  justify-content: center;
+}
+
+
+.bottomcontent{
+  border: solid;
+  border-width: thin;
+  border-color: black;
+  margin: 50px;
+  padding-left: 20px;
+}
+
+.introduction{
+  width: 40%;
+}
+
+.status{
+  width: 35%;
+  line-height: 0.5;
 }
