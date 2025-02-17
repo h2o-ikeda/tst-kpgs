@@ -20,7 +20,7 @@
        <p>とくこう　<input type="text" name="special_attack" value="{{special_attack}}" size="25"></p>
        <p>とくぼう　<input type="text" name="special_defense" value="{{special_defense}}" size="25"></p>
        <p>すばやさ　<input type="text" name="quickness" value="{{quickness}}" size="25"></p>
-      <button type="button" class="btn" onclick="confirmFunction()">送信</button>
+      <button type="button" class="btn" onclick="confirmFunction()">保存</button>
     </form>
     </div>
   </body>
@@ -29,7 +29,7 @@
     function confirmFunction() {
       
       // 確認ポップアップ
-      const result = confirm(`ほぞんしますか？`)
+      const result = confirm(`保存しますか？`)
   
       if( result ) {
 
