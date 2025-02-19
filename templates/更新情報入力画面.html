@@ -9,8 +9,9 @@
       <h1>更新情報を入力してください。</h1>
     </header>
     <div class="content">
-    　<p>No.{{number}}</p>
-    　<form method="POST" action="/save" name="inputForm">
+      <p>No.{{number}}</p>
+      <form method="POST" action="/save" name="inputForm">
+       <input type="hidden" name="number" value="{{number}}">
        <p>名前　<input type="text" name="pokemonName" value="{{pokemonName}}" size="25"></p>
        <p>タイプ　<input type="text" name="type" value="{{type}}" size="25"></p>
        <p>紹介文　<input type="text" name="intro" value="{{intro}}" size="25"></p>
@@ -20,7 +21,7 @@
        <p>とくこう　<input type="text" name="special_attack" value="{{special_attack}}" size="25"></p>
        <p>とくぼう　<input type="text" name="special_defense" value="{{special_defense}}" size="25"></p>
        <p>すばやさ　<input type="text" name="quickness" value="{{quickness}}" size="25"></p>
-      <button type="button" class="btn" onclick="confirmFunction(); location.href='./update'">保存</button>
+      <button type="button" class="btn" onclick="confirmFunction(); history.back();">保存</button>
     </form>
     </div>
   </body>
