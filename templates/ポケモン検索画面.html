@@ -11,7 +11,7 @@
     <div class="content">
     <p>タイプでさがす</p>
     <form method="POST" action="/" name="inputForm">
-      <p><input type="text" name="type" placeholder="ひらがなで入力してください" class="seachform" size="25"></p>
+      <p><input type="text" name="search_type" placeholder="ひらがなで入力してください" class="seachform" size="25"></p>
       <button type="button" class="btn" id="searchButton" onclick="confirmFunction()">送信</button>
     </form>
     </div>
@@ -21,19 +21,16 @@
     function confirmFunction() {
 
       // 入力チェック
-      if (inputForm.type.value === "") {
+      if (inputForm.search_type.value === "") {
         alert("タイプを入力してください")
         return false
       }
       
       // 確認ポップアップ
       const result = confirm(`下記の情報でポケモンを検索します。よろしいですか？
-タイプ：${inputForm.type.value}`)
+タイプ：${inputForm.search_type.value}`)
   
       if( result ) {
-
-      //   // 検索ボタンの二重クリック防止処理
-      //   document.getElementById("searchButton").disabled = true
         // サーバに通知
         inputForm.submit()
 
