@@ -10,11 +10,11 @@
     </header>
     <div class="content">
       <div class="resultheader">
-        <p><span class="resultheadertext">検索結果</span>タイプ：{{type}}</p>
+        <p><span class="resultheadertext">検索結果</span>タイプ：{{search_type}}</p>
       </div>
       {% for item in db %}
         <div class="resultList">
-          <a href="/detail?id={{item[0]}}" class="item">
+          <a href="/detail?id={{item[0]}}&search_type={{search_type}}" class="item">
             <p>No.{{item[0]}}</p>
             <p>{{item[1]}}</p>
           </a>
