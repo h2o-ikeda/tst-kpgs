@@ -8,4 +8,4 @@ handlers:
   redirect_http_response_code: 301
   script: auto
 
-service: pokemonDBalignment
+service: pokemondbalignment
