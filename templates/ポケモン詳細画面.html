@@ -13,9 +13,7 @@
         <p>{{pokemonName}}</p>
         <p>タイプ：{{type}}</p>
        </div>
-       <div class="introduction bottomcontent">
-        <p>{{intro}}</p>
-       </div>
+       <div class="introduction bottomcontent">{{intro}}</div>
        <div class="status bottomcontent">
         <p>HP：{{hp}}</p>
         <p>こうげき：{{attack}}</p>
@@ -37,10 +35,10 @@
        <input type="hidden" name="special_attack" value="{{special_attack}}">
        <input type="hidden" name="special_defense" value="{{special_defense}}">
        <input type="hidden" name="quickness" value="{{quickness}}">
-      <button type="button" class="btn" onclick="updatepage()">更新</button>
-      <button type="button" id="returnbutton" onclick="listpage()">一覧画面に戻る</button>
+      <button type="button" class="btn" onclick="updatepage()">更新</button><br>
+      <button type="button" class="btn" id="returnbutton" onclick="listpage()">一覧画面に戻る</button>
       </form>
-      <button type="button" id="searchbutton" onclick="location.href='./'">検索画面に戻る</button>
+      <button type="button" class="btn" id="searchbutton" onclick="location.href='./'">検索画面に戻る</button>
     </div>
   </body>
   <script>
