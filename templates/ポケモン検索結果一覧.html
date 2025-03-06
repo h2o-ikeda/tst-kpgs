@@ -23,16 +23,8 @@
       <button type="button" class="btn" id="searchbutton" onclick="location.href='./'">検索画面に戻る</button>
       <form method="POST" action="/downroad" name="downroad">
         <input type="hidden" id="myForm" name="db" value="{{db}}">
-        <button type="button" class="btn" id="downroadbutton" onclick="changeText()">ダウンロード</button>
+        <button type="submit" class="btn" id="downroadbutton">ダウンロード</button>
       </form>
     </div>
-    <script>
-      function changeText() {
-        const data = downroad.db.value;
-        const db = JSON.stringify(data);
-        document.getElementById("myForm").value = db;
-        downroad.submit();
-      }
-    </script>
   </body>
 </html>
