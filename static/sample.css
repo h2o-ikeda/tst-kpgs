@@ -9,21 +9,18 @@ img {
 }
 
 .seachform{
+  width: 400px;
   font-size: x-large;
   padding: 10px;
   border-radius: 10px;
+  border-width: thin;
 }
 
 .btn{
   font-size: x-large;
-  width: 3em;
   border-radius: 10px;
-
-}
-
-h1 {
-  display: inline;
-  position: absolute;
+  display: inline-block;
+  margin: 10px;
 }
 
 body {
@@ -95,9 +92,16 @@ body {
 
 .introduction{
   width: 40%;
+  padding-top: 20px;
+  white-space: pre;
 }
 
 .status{
   width: 35%;
   line-height: 0.5;
+}
+
+.updatecontent {
+  display: flex;
+  justify-content: center;
 }
