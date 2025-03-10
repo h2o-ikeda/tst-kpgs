@@ -14,16 +14,23 @@
       <form method="POST" action="/save" name="inputForm">
        <input type="hidden" name="number" value="{{number}}">
        <input type="hidden" name="search_type" value="{{search_type}}">
-       <p>名前　　　<input type="text" name="pokemonName" value="{{pokemonName}}" class="seachform"></p>
-       <p>タイプ　　<input type="text" name="type" value="{{type}}" class="seachform"></p>
-       <p>紹介文　　<textarea name="intro" class="seachform" rows="3">{{intro}}</textarea></p>
-       <p>ＨＰ　　　<input type="text" name="hp" value="{{hp}}" class="seachform"></p>
-       <p>こうげき　<input type="text" name="attack" value="{{attack}}" class="seachform"></p>
-       <p>ぼうぎょ　<input type="text" name="defense" value="{{defense}}" class="seachform"></p>
-       <p>とくこう　<input type="text" name="special_attack" value="{{special_attack}}" class="seachform"></p>
-       <p>とくぼう　<input type="text" name="special_defense" value="{{special_defense}}" class="seachform"></p>
-       <p>すばやさ　<input type="text" name="quickness" value="{{quickness}}" class="seachform"></p>
-      <button type="button" class="btn" onclick="confirmFunction(); history.back();">保存</button>
+       <p>申請者名　　　　　　　　 <input type="text" name="requestName" value="" class="seachform"></p>
+       <p>申請者メールアドレス　　 <input type="text" name="requestAddress" value="" class="seachform"></p>
+       <p>タイトル　　            <input type="text" name="title" value="" class="seachform"></p>
+       <p>名前　　　　　　　　　　 <input type="text" name="pokemonName" value="{{pokemonName}}" class="seachform"></p>
+       <p>タイプ　　　　　　　　　 <input type="text" name="type" value="{{type}}" class="seachform"></p>
+       <p>紹介文　　　　　　　　　 <textarea name="intro" class="seachform" rows="3">{{intro}}</textarea></p>
+       <p>ＨＰ　　　　　　　　　　 <input type="text" name="hp" value="{{hp}}" class="seachform"></p>
+       <p>こうげき　　　　　　　　 <input type="text" name="attack" value="{{attack}}" class="seachform"></p>
+       <p>ぼうぎょ　　　　　　　　 <input type="text" name="defense" value="{{defense}}" class="seachform"></p>
+       <p>とくこう　　　　　　　　 <input type="text" name="special_attack" value="{{special_attack}}" class="seachform"></p>
+       <p>とくぼう　　　　　　　　 <input type="text" name="special_defense" value="{{special_defense}}" class="seachform"></p>
+       <p>すばやさ　　　　　　　　 <input type="text" name="quickness" value="{{quickness}}" class="seachform"></p>
+       <p>承認者①名前　　　　 　　 <input type="text" name="approvalName_1" value="" class="seachform"></p>
+       <p>承認者①メールアドレス　　<input type="text" name="rapprovalAddress_1" value="" class="seachform"></p>
+       <p>承認者②名前　　　　 　　 <input type="text" name="approvalName_2" value="" class="seachform"></p>
+       <p>承認者②メールアドレス　　<input type="text" name="rapprovalAddress_2" value="" class="seachform"></p>
+    <button type="button" class="btn" onclick="confirmFunction(); history.back();">申請</button>
     </form>
     </div>
    </div>
