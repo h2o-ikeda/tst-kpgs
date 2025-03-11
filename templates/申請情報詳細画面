@@ -7,18 +7,23 @@
   <body>
     <div class="content">
       <div class="contentposition">
-        <p>申請ID{{applicationID}}</p>
-        <p>申請日{{applicationDate}}</p>
-        <p>申請者名{{application}}</p>
+        <p>申請ID：{{requestID}}</p>
+        <p>申請日：{{requestDate}}</p>
+        <p>申請者名：{{requestName}}</p>
+        <p>申請者メールアドレス：{{requestAddress}}</p>
+        <p>タイトル：{{title}}</p>
         <p>No.{{number}}</p>
-        <p>{{pokemonName}}</p>
+        <p>ポケモン名：{{pokemonName}}</p>
         <p>タイプ：{{type}}</p>
+        <p>紹介文：{{introduction}}</p>
         <p>HP：{{hp}}</p>
         <p>こうげき：{{attack}}</p>
         <p>ぼうぎょ：{{defense}}</p>
         <p>とくこう：{{special_attack}}</p>
         <p>とくぼう：{{special_defense}}</p>
         <p>すばやさ：{{quickness}}</p>
+        <p>ステータス：{{status}}</p>
+        <p>承認者①名前：{{}}</p>
       </div>
       <form method="POST" id="myForm" action="" name="inputForm">
        <input type="hidden" name="search_type" value="{{search_type}}">
