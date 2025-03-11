@@ -9,7 +9,7 @@
       <div class="resultheader">
         <p>申請情報一覧</p>
       </div>
-      {% for item in db %}
+      {% for item in dataList %}
         <div class="resultList">
           <a href="/requestInformation?id={{item[0]}}" class="item">
             <p>{{item[1]}}</p>
