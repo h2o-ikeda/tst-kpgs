@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>申請情報一覧画面</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='sample.css') }}">
+  </head>
+  <body>
+    <div class="content">
+      <div class="resultheader">
+        <p>申請情報一覧</p>
+      </div>
+      {% for item in db %}
+        <div class="resultList">
+          <a href="/applicationInformation?id={{item[0]}}" class="item">
+            <p>{{item[1]}}</p>
+            <p>{{item[4]}}</p>
+          </a>
+        </div>
+      {% endfor %}
+      <button type="button" class="btn" id="searchbutton" onclick="location.href='./'">検索画面に戻る</button>
+      </form>
+    </div>
+  </body>
+</html>
