@@ -23,7 +23,10 @@
         <p>とくぼう：{{special_defense}}</p>
         <p>すばやさ：{{quickness}}</p>
         <p>ステータス：{{status}}</p>
-        <p>承認者①名前：{{}}</p>
+        <p>承認者①名前：{{approvalName_1}}</p>
+        <p>承認者①メールアドレス：{{approvalAddress_1}}</p>
+        <p>承認者②名前：{{approvalName_2}}</p>
+        <p>承認者②メールアドレス：{{approvalAddress_2}}</p>
       </div>
       <form method="POST" id="myForm" action="" name="inputForm">
        <input type="hidden" name="search_type" value="{{search_type}}">
@@ -37,18 +40,19 @@
        <input type="hidden" name="special_attack" value="{{special_attack}}">
        <input type="hidden" name="special_defense" value="{{special_defense}}">
        <input type="hidden" name="quickness" value="{{quickness}}">
-      <button type="button" class="btn" onclick="updatepage()">更新</button><br>
-      <button type="button" class="btn" id="returnbutton" onclick="listpage()">一覧画面に戻る</button>
+      {% if {{status}}=="承認者①承認待ち" or {{status}}=="承認者②承認待ち" %}
+      <button type="button" class="btn" onclick="updatepage()">承認</button><br>
+      {% endif %}
+      <button type="button" class="btn" id="returnbutton" onclick="listpage()">申請情報一覧画面に戻る</button>
       </form>
-      <button type="button" class="btn" id="searchbutton" onclick="location.href='./'">検索画面に戻る</button>
     </div>
   </body>
   <script>
     function updatepage() {
     document.getElementById("myForm").action = "/update";
     document.getElementById("myForm").submit();
-  }
-  
+　　} 
+　　
     function listpage() {
     document.getElementById("myForm").action = "/";
     document.getElementById("myForm").submit();
