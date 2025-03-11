@@ -30,7 +30,7 @@
        <p>承認者①メールアドレス　　<input type="text" name="rapprovalAddress_1" value="" class="seachform"></p>
        <p>承認者②名前　　　　 　　 <input type="text" name="approvalName_2" value="" class="seachform"></p>
        <p>承認者②メールアドレス　　<input type="text" name="rapprovalAddress_2" value="" class="seachform"></p>
-    <button type="button" class="btn" onclick="confirmFunction(); history.back();">申請</button>
+    <button type="button" class="btn" onclick="confirmFunction();">申請</button>
     </form>
     </div>
    </div>
@@ -40,7 +40,7 @@
     function confirmFunction() {
       
       // 確認ポップアップ
-      const result = confirm(`保存しますか？`)
+      const result = confirm(`申請しますか？`)
   
       if( result ) {
 
