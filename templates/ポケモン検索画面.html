@@ -14,7 +14,7 @@
       <p><input type="text" name="search_type" placeholder="ひらがなで入力してください" class="seachform" size="25"></p>
       <button type="button" class="btn" id="searchButton" onclick="confirmFunction()">送信</button>
     </form>
-    <form method="POST" action="/upload" name="uploadForm">
+    <form method="POST" action="/upload" name="uploadForm" enctype="multipart/form-data">
       <input type="file" name="uploadFile" accept="text/csv">
       <button type="submit" class="btn" id="uploadButton">CSVアップロード</button>
     </form>
