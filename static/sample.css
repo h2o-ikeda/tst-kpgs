@@ -105,3 +105,12 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.requestContent {
+  border: solid;
+  border-width: thin;
+  border-radius: 10px;
+  border-color: black;
+  margin: 50px;
+  padding-left: 20px;
+}
